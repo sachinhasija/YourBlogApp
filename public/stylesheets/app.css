@@ -1,0 +1,137 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+}
+
+body,
+html {
+    background: #efefef;
+    height: 100%;
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.ui.grid>[class*="three wide"].column {
+    min-width: 400px;
+}
+
+.show.content {
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+}
+
+.nav-container {
+    max-width: 80% !important;
+    min-width: 80%;
+    margin: 0 auto;
+}
+
+.blogs-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 13vh;
+
+}
+
+.ui.menu .item>i.icon {
+    transform: scale(2);
+    margin-right: 0.8rem;
+
+}
+
+.ui.grid {
+    margin-top: 3rem;
+    align-items: start;
+}
+
+.ui.card {
+    margin: 1rem 1rem;
+}
+
+.ui.inverted.menu .item::before {
+    background: none;
+}
+
+
+.ui.inverted.menu {
+    background-color: transparent;
+}
+
+.scrolled {
+    background-color: #1b1c1d !important;
+    transition: linear 300ms;
+}
+
+.ui.text.container {
+    max-width: 50vw !important;
+}
+
+.ui.header {
+    color: black;
+    margin-top: 10px;
+}
+
+
+
+#show:focus {
+    background-color: transparent;
+    box-shadow: 0 0 0 2px #a291fb inset !important;
+    color: #a291fb;
+}
+
+.ui.card:first-child {
+    margin-top: 1rem;
+}
+
+.ui.card>.image>img,
+.ui.cards>.card>.image>img {
+    height: 30vh;
+}
+
+.ui.form :focus::placeholder {
+    color: black;
+}
+
+.ui.form ::placeholder {
+    color: black;
+}
+
+.ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless)>.container>.item:not(.right):not(.borderless):first-child {
+    border: none;
+}
+
+.ui.text.container {
+    margin-top: 15vh;
+}
+
+.ui.inverted.menu .dropdown.item:hover,
+.ui.inverted.menu .link.item:hover,
+.ui.inverted.menu a.item:hover,
+.ui.link.inverted.menu .item:hover {
+    color: red;
+}
+
+.ui.inverted.menu .item,
+.ui.inverted.menu .item>a:not(.ui) {
+    color: #54c8ff;
+    font-size: 1.2em;
+}

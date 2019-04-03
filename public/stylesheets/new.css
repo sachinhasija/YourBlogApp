@@ -1,0 +1,14 @@
+.ui.form {
+    width: 60%;
+    margin: 20vh auto;
+}
+
+.ui.form .field {
+    width: 80%;
+    margin: 20px;
+    text-align: center;
+}
+
+.ui.form input[type="text"]:focus {
+    border: 1px solid rgba(0, 0, 0, .87);
+}

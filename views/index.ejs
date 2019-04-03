@@ -1,0 +1,27 @@
+<% include partials/header %>
+<% include partials/nav %>
+<header> <h1>  YOUR BLOG NAME  </h1></header>
+
+<div class=" ui container" id="blogs-container">
+   
+ 
+    <div class="ui grid">
+    <% blogs.forEach(function(blog){ %>
+    <div class="ui card three wide column" >
+        <h2> <%= blog.title %> </h2>
+        <div class="image">
+            <img src="<%= blog.image %>" alt="Blog Image">
+        </div>
+        <div class="content">
+            <span style="display:block;"> Created:<%= blog.created.toDateString() %> </span>
+            <p> <%- blog.body.substring(0, 100) %>... </p>
+            <a class="ui violet inverted button" id="show" href="/blogs/<%=blog._id %>" target="_blank">Show more</a>
+            <form action="/blogs/<%= blog._id%>?_method=DELETE" method="POST"><button class="ui red inverted button small" id="show" type="submit">Delete</button></form>
+            
+        </div>
+    </div>
+    <% }) %>
+    </div>
+</div>
+<% include partials/footer %>
+
